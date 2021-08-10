@@ -1,0 +1,15 @@
+micronaut:
+  application:
+    name: loteriaRest
+
+grpc:
+  client:
+    plainttext: true
+    max-try-attempts: 10
+  channels:
+    loteria:
+      address: 'localhost:50051'
+      plaintext: true
+      max-try-attempts: 5
+
+port: 8082
